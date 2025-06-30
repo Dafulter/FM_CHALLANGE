@@ -6,12 +6,15 @@
   <title>News Homepage</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 </head>
 <body>
   <header class="header container">
-    <div class="logo">W.</div>
-    <nav class="nav" id="nav">
+    <div class="logo" aria-label="Website Logo">W.</div>
+    
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Navigation Menu">&#9776;</button>
+    
+    <nav class="nav" id="nav" aria-label="Main Navigation">
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">New</a></li>
@@ -20,58 +23,66 @@
         <li><a href="#">Categories</a></li>
       </ul>
     </nav>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Menu Toggle">&#9776;</button>
   </header>
 
   <main class="main container">
+    <!-- Hero Section -->
     <section class="hero">
-      <img src="assets/images/image-web-3-desktop.jpg" alt="Web 3 Image" class="hero-img" />
+      <img src="assets/images/image-web-3-desktop.jpg" alt="Colorful abstract representation of Web 3.0" class="hero-img" />
+      
       <div class="hero-text">
         <h1>The Bright Future of Web 3.0?</h1>
         <div class="hero-description">
           <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <a href="#" class="btn">Read more</a>
+          <a href="#" class="btn" aria-label="Read more about Web 3.0">Read more</a>
         </div>
       </div>
     </section>
 
-    <aside class="sidebar">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Recent News">
       <h2>New</h2>
+
       <div class="sidebar-item">
         <h3><a href="#">Hydrogen VS Electric Cars</a></h3>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
       </div>
       <hr />
+
       <div class="sidebar-item">
         <h3><a href="#">The Downsides of AI Artistry</a></h3>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
       </div>
       <hr />
+
       <div class="sidebar-item">
         <h3><a href="#">Is VC Funding Drying Up?</a></h3>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </div>
     </aside>
 
-    <section class="bottom-articles">
-      <article>
-        <img src="assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+    <!-- Bottom Articles -->
+    <section class="bottom-articles" aria-label="Featured Articles">
+      <article class="bottom-article">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Modernized retro PC setup" />
         <div>
           <h4>01</h4>
           <h3><a href="#">Reviving Retro PCs</a></h3>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </article>
-      <article>
-        <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops" />
+
+      <article class="bottom-article">
+        <img src="assets/images/image-top-laptops.jpg" alt="Stack of top laptops for 2022" />
         <div>
           <h4>02</h4>
           <h3><a href="#">Top 10 Laptops of 2022</a></h3>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </article>
-      <article>
-        <img src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth" />
+
+      <article class="bottom-article">
+        <img src="assets/images/image-gaming-growth.jpg" alt="Controller and gaming headset" />
         <div>
           <h4>03</h4>
           <h3><a href="#">The Growth of Gaming</a></h3>
